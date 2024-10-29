@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Mail</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* Стили по умолчанию */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", Arial, sans-serif;
+        }
+
+        .mobile-logo {
+            display: none;
+        }
+
+        /* Основные стили */
+        .mail-content {
+            padding: 20px;
+        }
+
+        .contacts-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contacts-item img {
+            margin-right: 12px;
+            width: 16px;
+            height: 16px;
+        }
+
+        .contacts-item a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #292929;
+            white-space: nowrap;
+        }
+
+        /* Медиа-запрос для мобильных */
+        @media only screen and (max-width: 500px) {
+            .mobile-logo {
+                display: block !important;
+            }
+
+            .logo-mail {
+                display: none;
+            }
+
+            .mail-content {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 16px !important;
+                line-height: 20px !important;
+            }
+
+            .footer-description {
+                font-size: 8px !important;
+                line-height: 12px !important;
+            }
+        }
+
+        .red-line {
+            width: 65%;
+            background-color: #D52B1E;
+            border-top-right-radius: 8px;
+        }
+
+        .blue-line {
+            width: 35%;
+            background-color: #0039A6;
+            border-top-left-radius: 8px;
+        }
+
+        .table-spacing {
+            width: 2%;
+        }
+
+        @media screen and (max-width: 500px) {
+            .table-spacing {
+                width: 6%;
+            }
+        }
+    </style>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mail">
+    <tr>
+        <td>
+            <table width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td style="background-color: #D52B1E; height: 12px;"></td>
+                </tr>
+            </table>
+
+            <table width="100%" cellspacing="0" cellpadding="0" class="mail-content" style="padding: 20px;">
+                <tr>
+                    <td>
+                        <h1 style="font-size: 24px; line-height: 30px; margin: 0">Дубровский Иван Иванович</h1>
+                        <p style="font-size: 12px; line-height: 16px; font-weight: 500;">Генеральный директор</p>
+                    </td>
+                    <td>
+                        <div class="contacts">
+                            <div class="contacts-item">
+                                <img src="https://gusi-lebedi-dev.github.io/rently-plug-page/assets/img/mail/tel.png"
+                                     alt="">
+                                <a href="#">+7 985 277-77-74</a>
+                            </div>
+                            <div class="contacts-item">
+                                <img src="https://gusi-lebedi-dev.github.io/rently-plug-page/assets/img/mail/mail.png"
+                                     alt="">
+                                <a href="#">info@rently.ooo</a>
+                            </div>
+                            <div class="contacts-item">
+                                <img src="https://gusi-lebedi-dev.github.io/rently-plug-page/assets/img/mail/web.png"
+                                     alt="">
+                                <a href="#">https://rently.com</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="padding:0 20px 8px;font-size: 10px; line-height: 14px; color: #6f6f6f; font-style: italic; font-weight: 600;">
+                        <span>  “РЕНТЛИ - ФОРМУЛА-1 В УПРАВЛЕНИИ АВТОПАРКОМ“</span>
+                    </td>
+                </tr>
+            </table>
+
+            <table width="100%" cellspacing="0" cellpadding="0" class="mail-footer">
+                <tr>
+                    <td class="red-line" style="background-color: #D52B1E; width: 65%; border-top-left-radius: 8px;">
+
+                    </td>
+                    <td class="table-spacing" style="width: 2%; @media screen and (max-width: 500px) {
+                        width: 6%;
+                    }"></td>
+                    <td>
+                        <img src="https://gusi-lebedi-dev.github.io/rently-plug-page/assets/img/mail/logo-mail.png"
+                             alt="">
+                    </td>
+                    <td class="table-spacing" style="width: 2%; @media screen and (max-width: 500px) {
+                        width: 6%;
+                    }"></td>
+                    <td class="blue-line" style="background-color: #0039A6; width: 35%; border-top-left-radius: 8px;">
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
