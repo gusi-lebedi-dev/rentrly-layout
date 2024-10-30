@@ -49,8 +49,12 @@ window.addEventListener('scroll', function() {
 
     const imagesRight = document.querySelectorAll('.image-anim-right');
     const imagesLeft = document.querySelectorAll('.image-anim-left');
+    const blueButton = document.querySelector('.blue-button');
 
     if (windowWidth > 1076) {
+        blueButton.classList.remove('image-anim-left')
+        blueButton.classList.add('image-anim-right')
+
         if (scrollY >= 300) {
             imagesRight.forEach((img) => {
                 const speed = img.dataset.speed;
@@ -61,7 +65,21 @@ window.addEventListener('scroll', function() {
                 img.style.transform = `translateX(-${(scrollY - 300) * speed}px)`;
             });
         }
+    } else if (windowWidth < 1076) {
+        blueButton.classList.remove('image-anim-right')
+        blueButton.classList.add('image-anim-left')
+        if (scrollY > 50) {
+            imagesRight.forEach((img) => {
+                const speed = img.dataset.speed;
+                img.style.transform = `translateX(${(scrollY - 65) * speed}px)`;
+            });
+            imagesLeft.forEach((img) => {
+                const speed = img.dataset.speed;
+                img.style.transform = `translateX(-${(scrollY - 65) * speed}px)`;
+            });
+        }
     }
+
 
 });
 
