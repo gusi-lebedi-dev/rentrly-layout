@@ -1292,6 +1292,11 @@ h2 {
     display: none;
 }
 
+.contacts a {
+    text-decoration: none;
+    color: #1B2934;
+}
+
 @media screen and (max-width: 1076px) {
     .footer-logo {
         display: none;
