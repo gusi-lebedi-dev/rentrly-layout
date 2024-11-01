@@ -1750,10 +1750,6 @@ h2 {
     margin: 0 auto;
 }
 
-.integrations .section-50-item:nth-child(4) {
-min-height: 212px !important;
-}
-
 .integrations .section-50-item:nth-child(4):before {
     display: none;
 }
@@ -1762,6 +1758,12 @@ min-height: 212px !important;
 .integrations .section-50-item:nth-child(2):after,
 .integrations .section-50-item:nth-child(3):after {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .integrations .section-50-item:nth-child(4) {
+        min-height: 212px !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
