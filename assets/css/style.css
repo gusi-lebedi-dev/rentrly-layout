@@ -1295,6 +1295,7 @@ h2 {
 .contacts a {
     text-decoration: none;
     color: #1B2934;
+    white-space: nowrap;
 }
 
 .color-blue {
