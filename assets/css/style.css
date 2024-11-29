@@ -2032,6 +2032,12 @@ h2 {
     color: #292929;
 }
 
+.blog-post .source {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
 @media screen and (max-width: 1076px) {
     .bread-crumbs {
         margin-bottom: 12px;
@@ -2061,6 +2067,9 @@ h2 {
 @media screen and (max-width: 768px) {
     .blog-item {
         flex-basis: calc(50% - 16px);
+    }
+    .blog-post .source {
+        font-size: 14px;
     }
 }
 
