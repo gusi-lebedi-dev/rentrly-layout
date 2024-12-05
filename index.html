@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>RENTLY</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -46,9 +48,12 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <svg class="header-logo-mobile" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M80 40C80 62.0904 62.0904 80 40 80C17.9096 80 0 62.0966 0 40C0 17.9096 17.9096 0 40 0C62.0904 0 80 17.9096 80 40Z" fill="white"/>
-                    <path d="M41.6339 60.6803H32.4772V23.2397H41.6339V60.6803ZM37.6892 41.4786H46.1998C47.8957 41.4786 49.25 41.0313 50.2625 40.143C51.2751 39.2547 51.7783 38.0619 51.7783 36.5772V35.3286C51.7783 33.8439 51.2751 32.6636 50.2625 31.8001C49.25 30.9366 47.8771 30.5017 46.1501 30.5017H37.6892V23.2397H47.3925C50.0886 23.2397 52.4492 23.7181 54.462 24.6685C56.4747 25.619 58.0277 26.9732 59.1211 28.7313C60.2144 30.4893 60.7548 32.5393 60.7548 34.8937V36.9686C60.7548 39.3354 60.2082 41.4165 59.1211 43.1932C58.0339 44.976 56.4809 46.3427 54.462 47.3056C52.4492 48.2685 50.0886 48.7468 47.3925 48.7468H37.6892V41.4786Z" fill="#1E4295"/>
+                <svg class="header-logo-mobile" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M80 40C80 62.0904 62.0904 80 40 80C17.9096 80 0 62.0966 0 40C0 17.9096 17.9096 0 40 0C62.0904 0 80 17.9096 80 40Z"
+                          fill="white"/>
+                    <path d="M41.6339 60.6803H32.4772V23.2397H41.6339V60.6803ZM37.6892 41.4786H46.1998C47.8957 41.4786 49.25 41.0313 50.2625 40.143C51.2751 39.2547 51.7783 38.0619 51.7783 36.5772V35.3286C51.7783 33.8439 51.2751 32.6636 50.2625 31.8001C49.25 30.9366 47.8771 30.5017 46.1501 30.5017H37.6892V23.2397H47.3925C50.0886 23.2397 52.4492 23.7181 54.462 24.6685C56.4747 25.619 58.0277 26.9732 59.1211 28.7313C60.2144 30.4893 60.7548 32.5393 60.7548 34.8937V36.9686C60.7548 39.3354 60.2082 41.4165 59.1211 43.1932C58.0339 44.976 56.4809 46.3427 54.462 47.3056C52.4492 48.2685 50.0886 48.7468 47.3925 48.7468H37.6892V41.4786Z"
+                          fill="#1E4295"/>
                     <path d="M30.8495 23.2642H21.8792V31.1784H30.8495V23.2642Z" fill="#D52E1E"/>
                 </svg>
 
@@ -89,12 +94,17 @@
             </div>
         </div>
         <section class="main-screen">
-            <img src="assets/img/front-page/finish-flag.png" alt="" class="finish-flag image-anim image-anim-left" data-speed="0.9">
-            <img src="assets/img/front-page/gold-button.png" alt="" class="gold-button image-anim image-anim-left" data-speed="0.7">
+            <img src="assets/img/front-page/finish-flag.png" alt="" class="finish-flag image-anim image-anim-left"
+                 data-speed="0.9">
+            <img src="assets/img/front-page/gold-button.png" alt="" class="gold-button image-anim image-anim-left"
+                 data-speed="0.7">
             <img src="assets/img/front-page/time.png" alt="" class="time image-anim image-anim-left" data-speed="0.5">
-            <img src="assets/img/front-page/champion.png" alt="" class="champion image-anim image-anim-right" data-speed="0.9">
-            <img src="assets/img/front-page/pink-button.png" alt="" class="pink-button image-anim image-anim-right" data-speed="0.7">
-            <img src="assets/img/front-page/blue-button.png" alt="" class="blue-button image-anim image-anim-right" data-speed="0.5">
+            <img src="assets/img/front-page/champion.png" alt="" class="champion image-anim image-anim-right"
+                 data-speed="0.9">
+            <img src="assets/img/front-page/pink-button.png" alt="" class="pink-button image-anim image-anim-right"
+                 data-speed="0.7">
+            <img src="assets/img/front-page/blue-button.png" alt="" class="blue-button image-anim image-anim-right"
+                 data-speed="0.5">
 
             <div class="main-screen-content">
                 <h1>
@@ -282,6 +292,67 @@
                 </div>
             </div>
         </section>
+
+        <section class="partners">
+            <h2>
+                НАШИ <span class="color-blue">ПАРТНЕРЫ</span>
+            </h2>
+            <div class="slick-slider">
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/regula.svg" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/signMe.svg" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/mangooffice.png" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/galileosky.svg" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/yandexcloud.png" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/amocrm.png" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/tbank.svg" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/pavlov.png" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/autopilot.svg" alt="slider-image">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="partners-item">
+                        <img src="assets/img/slider/travel.svg" alt="slider-image">
+                    </a>
+                </div>
+            </div>
+            <button class="content-button" type="button" onclick="openModal()">Стать партнером</button>
+
+        </section>
+
         <section class="join-us">
             <div class="join-us-block">
                 <div class="join-us-item-left">
@@ -330,7 +401,7 @@
                         Контакты
                     </p>
                     <p>
-                        <a href="tel:8 800 775-52-48" >8 800 775-52-48</a>
+                        <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
                     </p>
                     <p><a href="mailto:info@rently.ooo">info@rently.ooo</a></p>
                 </div>
@@ -340,6 +411,27 @@
         </section>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 <script src="assets/js/index.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 6000,
+            arrows: false,
+            dots: false,
+            cssEase: 'linear',
+            centerMode: true,
+            variableWidth: true
+        });
+    });
+
+</script>
 </body>
 </html>
