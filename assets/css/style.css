@@ -176,7 +176,7 @@
     bottom: 0;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 3;
+    z-index: 30;
 }
 
 .form-request.open {
@@ -863,15 +863,18 @@ h2 {
 
 .footer {
     display: flex;
+    flex-direction: column;
     align-items: start;
     justify-content: space-between;
     padding: 40px 0 80px;
+    gap: 24px;
 }
 
 .footer .address,
 .footer .contacts {
     display: flex;
     flex-direction: column;
+    max-width: 207px;
 }
 
 .footer .title {
@@ -1281,10 +1284,8 @@ h2 {
 }
 
 .footer-logo {
-    margin-top: -25px;
-    margin-right: -25px;
-    width: 110px;
-    height: 110px;
+    width: 210px;
+    height: 47px;
     object-fit: cover;
 }
 
@@ -1308,13 +1309,8 @@ h2 {
 
 @media screen and (max-width: 1076px) {
     .footer-logo {
-        display: none;
-    }
-
-    .footer-logo-mobile {
-        display: block;
-        width: 85px;
-        height: 85px;
+        width: 196px;
+        height: 44px;
     }
 
     .footer .contacts {
@@ -2100,7 +2096,7 @@ h2 {
 }
 
 .partners-item {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     width: 300px;
@@ -2145,4 +2141,163 @@ h2 {
         max-width: 150px;
     }
 
+}
+
+.about-us-document {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #F7F7F9;
+    border-radius: 32px 32px 0px 32px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.about-us-document .title {
+    max-width: 978px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #54595B;
+    margin-bottom: 20px;
+}
+
+.galileosky img {
+    margin-top: -25px;
+}
+
+.footer-policy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.policy {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1B2934;;
+    text-decoration: none;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.footer-group-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer-group-item.social {
+    gap: 16px;
+}
+
+.policy-mobile {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup-content {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    gap: 16px;
+    max-width: 687px;
+    width: 100%;
+    height: 142px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.popup-content a {
+    color: black;
+}
+.popup-content button {
+    max-width: 400px;
+    width: 100%;
+    height: 46px;
+    padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .policy {
+        display: none;
+    }
+
+    .policy.policy-mobile {
+        display: block;
+        font-size: 12px;
+        line-height: 140%;
+    }
+
+    .footer-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-group-item {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .footer-group-item.social {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer .address, .footer .contacts {
+        max-width: 320px;
+    }
+
+    .footer .title {
+        margin-bottom: 4px;
+    }
+}
+
+#amoforms_action_btn {
+    font-family: "Montserrat" , sans-serif !important;
+    padding: 16px 20px;
+    max-width: 256px;
+    width: 100%;
+    height: 52px;
+    background: #0039A6;
+    border-radius: 12px !important;
+    border: none;
+    font-style: normal;
+    font-size: 16px !important;
+    line-height: 20px;
+    color: #FFFFFF !important;
+    transition: background .3s;
+    cursor: pointer;
+}
+#amoforms_action_btn:hover {
+    background: #003291 !important;
 }

@@ -12,6 +12,26 @@
 <div class="about integrations platform wrapper">
     <div class="container">
         <div class="header">
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p>Мы используем файлы cookie для улучшения вашего опыта на сайте. Подробнее об этом можно узнать в <a target="_blank" href="assets/docs/policy.pdf">Пользовательском соглашении</a>.</p>
+                    <button id="close-popup" class="blue-button content-button">Согласен</button>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popup = document.getElementById("popup");
+                    const closePopup = document.getElementById("close-popup");
+
+                    popup.style.display = "block";
+
+                    closePopup.addEventListener("click", function() {
+                        popup.style.display = "none";
+                    });
+                });
+            </script>
+
             <a href="/">
                 <svg class="header-logo" width="272" height="40" viewBox="0 0 272 40" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +91,6 @@
                     <a href="blog.html"> Блог</a>
                 </li>
             </ul>
-
 
 
             <div class="header-contacts">
@@ -150,39 +169,70 @@
             </section>
         </section>
 
+        <a href="assets/docs/certificate.pdf" class="about-us-document">
+            <p class="title">
+                В октябре 2024 года наша система получила свидетельство о государственной регистрации программ для ЭВМ.
+            </p>
+            <img src="assets/img/certificate-image.png" alt="certificate-image">
+        </a>
+
 
         <section class="footer">
-            <a href="/"><img class="footer-main-logo" src="assets/img/logo.svg" alt=""></a>
+            <div class="footer-group">
+                <div class="footer-policy">
+                    <a href="/"><img class="footer-main-logo" src="assets/img/logo.svg" alt=""></a>
+                    <a class="policy" href="assets/docs/policy.pdf">Пользовательское соглашение</a>
+                </div>
 
-            <div class="company-details">
-                <p>
-                    ООО «Рентли» <br>
-                    ИНН 9729380685
-                </p>
-            </div>
-
-            <div class="address">
-                <p class="title">
-                    Адрес
-                </p>
-                <p>
-                    121205, г. Москва, Инновационный Центр <br> Сколково, б-р Большой, <br>
-                    д. 42, стр. 1
-                </p>
-            </div>
-            <div class="contacts">
-                <div>
+                <div class="company-details">
+                    <p>
+                        ООО «Рентли» <br>
+                        ИНН 9729380685
+                    </p>
+                </div>
+                <div class="address">
                     <p class="title">
-                        Контакты
+                        Адрес
                     </p>
                     <p>
-                        <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
+                        121205, г. Москва, Инновационный Центр <br> Сколково, б-р Большой, <br>
+                        д. 42, стр. 1
                     </p>
-                    <p><a href="mailto:info@rently.ooo">info@rently.ooo</a></p>
                 </div>
-                <img class="footer-logo-mobile" src="assets/img/front-page/footer-logo.png" alt="">
+                <div class="contacts">
+                    <div>
+                        <p class="title">
+                            Контакты
+                        </p>
+                        <p>
+                            <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
+                        </p>
+                        <p><a href="mailto:info@rently.ooo">info@rently.ooo</a></p>
+                    </div>
+                    <img class="footer-logo-mobile" src="assets/img/front-page/footer-logo.png" alt="">
+                </div>
             </div>
-            <img class="footer-logo" src="assets/img/front-page/footer-logo.png" alt="">
+            <div class="footer-group">
+                <div class="footer-group-item social">
+                    <a target="_blank" href="https://dzen.ru/rently">
+                        <img src="assets/img/front-page/dzen.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://youtube.com/@arturszantmans">
+                        <img src="assets/img/front-page/youtube.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/rently.tech1">
+                        <img src="assets/img/front-page/insta.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.tiktok.com/@rently.tech">
+                        <img src="assets/img/front-page/tiktok.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-group-item">
+                    <img class="footer-logo" src="assets/img/front-page/footer-logo.png" alt="">
+                    <img class="tourism" src="assets/img/front-page/tourism.png" alt="">
+                </div>
+                <a class="policy policy-mobile" href="assets/docs/policy.pdf">Пользовательское соглашение</a>
+            </div>
         </section>
     </div>
 </div>

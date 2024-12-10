@@ -12,6 +12,26 @@
 <div class="platform wrapper">
     <div class="container">
         <div class="header">
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p>Мы используем файлы cookie для улучшения вашего опыта на сайте. Подробнее об этом можно узнать в <a target="_blank" href="assets/docs/policy.pdf">Пользовательском соглашении</a>.</p>
+                    <button id="close-popup" class="blue-button content-button">Согласен</button>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popup = document.getElementById("popup");
+                    const closePopup = document.getElementById("close-popup");
+
+                    popup.style.display = "block";
+
+                    closePopup.addEventListener("click", function() {
+                        popup.style.display = "none";
+                    });
+                });
+            </script>
+
             <a href="/">
                 <svg class="header-logo" width="272" height="40" viewBox="0 0 272 40" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +93,6 @@
             </ul>
 
 
-
             <div class="header-contacts">
                 <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
                 <a href="mailto:info@rently.ooo">info@rently.ooo</a>
@@ -101,9 +120,11 @@
                 <p class="description">
                     Настройте работу автопарка и наслаждайтесь прибылью
                 </p>
-                <button class="content-button" type="button" onclick="openModal()">
-                    Заказать демо
-                </button>
+<!--                <button class="content-button" type="button" onclick="openModal()">-->
+<!--                    Заказать демо-->
+<!--                </button>-->
+                <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1458182",hash:"51f86938609b39a94d4dea6d248f3832",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_1458182" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1733740640"></script>
+
             </div>
             <div class="form-request">
                 <div class="form-request-content">
@@ -247,38 +268,62 @@
     </section>
 
     <section class="footer">
-        <a href="/"><img class="footer-main-logo" src="assets/img/logo.svg" alt=""></a>
+            <div class="footer-group">
+                <div class="footer-policy">
+                    <a href="/"><img class="footer-main-logo" src="assets/img/logo.svg" alt=""></a>
+                    <a class="policy" href="assets/docs/policy.pdf">Пользовательское соглашение</a>
+                </div>
 
-        <div class="company-details">
-            <p>
-                ООО «Рентли» <br>
-                ИНН 9729380685
-            </p>
-        </div>
-
-        <div class="address">
-            <p class="title">
-                Адрес
-            </p>
-            <p>
-                121205, г. Москва, Инновационный Центр <br> Сколково, б-р Большой, <br>
-                д. 42, стр. 1
-            </p>
-        </div>
-        <div class="contacts">
-            <div>
-                <p class="title">
-                    Контакты
-                </p>
-                <p>
-                    <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
-                </p>
-                <p><a href="mailto:info@rently.ooo">info@rently.ooo</a></p>
+                <div class="company-details">
+                    <p>
+                        ООО «Рентли» <br>
+                        ИНН 9729380685
+                    </p>
+                </div>
+                <div class="address">
+                    <p class="title">
+                        Адрес
+                    </p>
+                    <p>
+                        121205, г. Москва, Инновационный Центр <br> Сколково, б-р Большой, <br>
+                        д. 42, стр. 1
+                    </p>
+                </div>
+                <div class="contacts">
+                    <div>
+                        <p class="title">
+                            Контакты
+                        </p>
+                        <p>
+                            <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
+                        </p>
+                        <p><a href="mailto:info@rently.ooo">info@rently.ooo</a></p>
+                    </div>
+                    <img class="footer-logo-mobile" src="assets/img/front-page/footer-logo.png" alt="">
+                </div>
             </div>
-            <img class="footer-logo-mobile" src="assets/img/front-page/footer-logo.png" alt="">
-        </div>
-        <img class="footer-logo" src="assets/img/front-page/footer-logo.png" alt="">
-    </section>
+            <div class="footer-group">
+                <div class="footer-group-item social">
+                    <a target="_blank" href="https://dzen.ru/rently">
+                        <img src="assets/img/front-page/dzen.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://youtube.com/@arturszantmans">
+                        <img src="assets/img/front-page/youtube.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/rently.tech1">
+                        <img src="assets/img/front-page/insta.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.tiktok.com/@rently.tech">
+                        <img src="assets/img/front-page/tiktok.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-group-item">
+                    <img class="footer-logo" src="assets/img/front-page/footer-logo.png" alt="">
+                    <img class="tourism" src="assets/img/front-page/tourism.png" alt="">
+                </div>
+                <a class="policy policy-mobile" href="assets/docs/policy.pdf">Пользовательское соглашение</a>
+            </div>
+        </section>
 </div>
 </div>
 <script src="assets/js/index.js"></script>

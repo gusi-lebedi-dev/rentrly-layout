@@ -14,6 +14,26 @@
 <div class="wrapper">
     <div class="container">
         <div class="header">
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p>Мы используем файлы cookie для улучшения вашего опыта на сайте. Подробнее об этом можно узнать в <a target="_blank" href="assets/docs/policy.pdf">Пользовательском соглашении</a>.</p>
+                    <button id="close-popup" class="blue-button content-button">Согласен</button>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popup = document.getElementById("popup");
+                    const closePopup = document.getElementById("close-popup");
+
+                    popup.style.display = "block";
+
+                    closePopup.addEventListener("click", function() {
+                        popup.style.display = "none";
+                    });
+                });
+            </script>
+
             <a href="/">
                 <svg class="header-logo" width="272" height="40" viewBox="0 0 272 40" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -122,54 +142,68 @@
                     <br>
                     на единой платформе
                 </p>
-                <button class="content-button" type="button" onclick="openModal()">
-                    Заказать демо
-                </button>
+<!--                <button class="content-button" type="button" onclick="openModal()">-->
+<!--                    Заказать демо-->
+<!--                </button>-->
+
+                <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1458182",hash:"51f86938609b39a94d4dea6d248f3832",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_1458182" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1733740640"></script>
+
             </div>
-            <div class="form-request">
-                <div class="form-request-content">
-                    <svg onclick="openModal()" class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11 13.3334L2.83332 21.5C2.52777 21.8056 2.13888 21.9584 1.66666 21.9584C1.19443 21.9584 0.805545 21.8056 0.49999 21.5C0.194434 21.1945 0.0416565 20.8056 0.0416565 20.3334C0.0416565 19.8611 0.194434 19.4722 0.49999 19.1667L8.66666 11L0.49999 2.83335C0.194434 2.5278 0.0416565 2.13891 0.0416565 1.66669C0.0416565 1.19446 0.194434 0.805576 0.49999 0.50002C0.805545 0.194465 1.19443 0.041687 1.66666 0.041687C2.13888 0.041687 2.52777 0.194465 2.83332 0.50002L11 8.66669L19.1667 0.50002C19.4722 0.194465 19.8611 0.041687 20.3333 0.041687C20.8055 0.041687 21.1944 0.194465 21.5 0.50002C21.8055 0.805576 21.9583 1.19446 21.9583 1.66669C21.9583 2.13891 21.8055 2.5278 21.5 2.83335L13.3333 11L21.5 19.1667C21.8055 19.4722 21.9583 19.8611 21.9583 20.3334C21.9583 20.8056 21.8055 21.1945 21.5 21.5C21.1944 21.8056 20.8055 21.9584 20.3333 21.9584C19.8611 21.9584 19.4722 21.8056 19.1667 21.5L11 13.3334Z"
-                              fill="#1B2934"/>
-                    </svg>
-                    <p class="title">
-                        Заполните заявку
-                    </p>
-                    <p class="description">
-                        Мы с вами свяжемся в ближайшее время
-                    </p>
-                    <form action="https://formspree.io/f/mdknvzzl"
-                          method="POST">
-                        <div class="form-group">
-                            <label>
-                                <input placeholder="Имя*" name="name" type="text">
-                            </label>
-                        </div>
-                        <div class="form-group form-items">
-                            <label>
-                                <input placeholder="Телефон*" name="tel" type="tel">
-                            </label>
-                            <label>
-                                <input placeholder="E-mail" name="email" type="email">
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label>
-                                <textarea placeholder="Ваш комментарий" name="message" rows="6"></textarea>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit">Отправить заявку</button>
-                        </div>
-                        <div class="form-group">
-                            <p>
-                                Нажимая на кнопку “Оставить заявку”, вы даете согласие на обработку персональных данных
-                            </p>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<!--            <div class="form-request">-->
+<!--                <div class="form-request-content">-->
+<!--                    <svg onclick="openModal()" class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none"-->
+<!--                         xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path d="M11 13.3334L2.83332 21.5C2.52777 21.8056 2.13888 21.9584 1.66666 21.9584C1.19443 21.9584 0.805545 21.8056 0.49999 21.5C0.194434 21.1945 0.0416565 20.8056 0.0416565 20.3334C0.0416565 19.8611 0.194434 19.4722 0.49999 19.1667L8.66666 11L0.49999 2.83335C0.194434 2.5278 0.0416565 2.13891 0.0416565 1.66669C0.0416565 1.19446 0.194434 0.805576 0.49999 0.50002C0.805545 0.194465 1.19443 0.041687 1.66666 0.041687C2.13888 0.041687 2.52777 0.194465 2.83332 0.50002L11 8.66669L19.1667 0.50002C19.4722 0.194465 19.8611 0.041687 20.3333 0.041687C20.8055 0.041687 21.1944 0.194465 21.5 0.50002C21.8055 0.805576 21.9583 1.19446 21.9583 1.66669C21.9583 2.13891 21.8055 2.5278 21.5 2.83335L13.3333 11L21.5 19.1667C21.8055 19.4722 21.9583 19.8611 21.9583 20.3334C21.9583 20.8056 21.8055 21.1945 21.5 21.5C21.1944 21.8056 20.8055 21.9584 20.3333 21.9584C19.8611 21.9584 19.4722 21.8056 19.1667 21.5L11 13.3334Z"-->
+<!--                              fill="#1B2934"/>-->
+<!--                    </svg>-->
+<!--                    <p class="title">-->
+<!--                        Заполните заявку-->
+<!--                    </p>-->
+<!--                    <p class="description">-->
+<!--                        Мы с вами свяжемся в ближайшее время-->
+<!--                    </p>-->
+<!--                    <form action="https://formspree.io/f/mdknvzzl"-->
+<!--                          method="POST">-->
+<!--                        <div class="form-group">-->
+<!--                            <label>-->
+<!--                                <input placeholder="Имя*" name="name" type="text">-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                        <div class="form-group form-items">-->
+<!--                            <label>-->
+<!--                                <input placeholder="Телефон*" name="tel" type="tel">-->
+<!--                            </label>-->
+<!--                            <label>-->
+<!--                                <input placeholder="E-mail" name="email" type="email">-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label>-->
+<!--                                <textarea placeholder="Ваш комментарий" name="message" rows="6"></textarea>-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <button type="submit">Отправить заявку</button>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <p>-->
+<!--                                Нажимая на кнопку “Оставить заявку”, вы даете согласие на обработку персональных данных-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+
+
+
+
+
+
+
+
+
 
             <img class="main-image" src="assets/img/front-page/mainscreen-devices.png" alt="image">
         </section>
@@ -242,6 +276,7 @@
                     <button class="content-button" type="button" onclick="openModal()">
                         Заказать демо
                     </button>
+
                 </div>
             </div>
         </section>
@@ -298,55 +333,44 @@
                 НАШИ <span class="color-blue">ПАРТНЕРЫ</span>
             </h2>
             <div class="slick-slider">
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/regula.svg" alt="slider-image">
-                    </a>
+                <div class="partners-item">
+                    <img src="assets/img/slider/regula.svg" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/signMe.svg" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/signMe.svg" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/mangooffice.png" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/mangooffice.png" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/galileosky.svg" alt="slider-image">
-                    </a>
+
+                <div class="galileosky partners-item">
+                    <img src="assets/img/slider/galileosky.svg" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/yandexcloud.png" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/yandexcloud.png" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/amocrm.png" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/amocrm.png" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/tbank.svg" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/tbank.svg" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/pavlov.png" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/pavlov.png" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/autopilot.svg" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/autopilot.svg" alt="slider-image">
                 </div>
-                <div>
-                    <a href="#" class="partners-item">
-                        <img src="assets/img/slider/travel.svg" alt="slider-image">
-                    </a>
+
+                <div class="partners-item">
+                    <img src="assets/img/slider/travel.svg" alt="slider-image">
                 </div>
             </div>
             <button class="content-button" type="button" onclick="openModal()">Стать партнером</button>
@@ -377,37 +401,61 @@
             </div>
         </section>
         <section class="footer">
-            <a href="/"><img class="footer-main-logo" src="assets/img/logo.svg" alt=""></a>
+            <div class="footer-group">
+                <div class="footer-policy">
+                    <a href="/"><img class="footer-main-logo" src="assets/img/logo.svg" alt=""></a>
+                    <a class="policy" href="assets/docs/policy.pdf">Пользовательское соглашение</a>
+                </div>
 
-            <div class="company-details">
-                <p>
-                    ООО «Рентли» <br>
-                    ИНН 9729380685
-                </p>
-            </div>
-
-            <div class="address">
-                <p class="title">
-                    Адрес
-                </p>
-                <p>
-                    121205, г. Москва, Инновационный Центр <br> Сколково, б-р Большой, <br>
-                    д. 42, стр. 1
-                </p>
-            </div>
-            <div class="contacts">
-                <div>
+                <div class="company-details">
+                    <p>
+                        ООО «Рентли» <br>
+                        ИНН 9729380685
+                    </p>
+                </div>
+                <div class="address">
                     <p class="title">
-                        Контакты
+                        Адрес
                     </p>
                     <p>
-                        <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
+                        121205, г. Москва, Инновационный Центр <br> Сколково, б-р Большой, <br>
+                        д. 42, стр. 1
                     </p>
-                    <p><a href="mailto:info@rently.ooo">info@rently.ooo</a></p>
                 </div>
-                <img class="footer-logo-mobile" src="assets/img/front-page/footer-logo.png" alt="">
+                <div class="contacts">
+                    <div>
+                        <p class="title">
+                            Контакты
+                        </p>
+                        <p>
+                            <a href="tel:8 800 775-52-48">8 800 775-52-48</a>
+                        </p>
+                        <p><a href="mailto:info@rently.ooo">info@rently.ooo</a></p>
+                    </div>
+                    <img class="footer-logo-mobile" src="assets/img/front-page/footer-logo.png" alt="">
+                </div>
             </div>
-            <img class="footer-logo" src="assets/img/front-page/footer-logo.png" alt="">
+            <div class="footer-group">
+                <div class="footer-group-item social">
+                    <a target="_blank" href="https://dzen.ru/rently">
+                        <img src="assets/img/front-page/dzen.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://youtube.com/@arturszantmans">
+                        <img src="assets/img/front-page/youtube.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/rently.tech1">
+                        <img src="assets/img/front-page/insta.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.tiktok.com/@rently.tech">
+                        <img src="assets/img/front-page/tiktok.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-group-item">
+                    <img class="footer-logo" src="assets/img/front-page/footer-logo.png" alt="">
+                    <img class="tourism" src="assets/img/front-page/tourism.png" alt="">
+                </div>
+                <a class="policy policy-mobile" href="assets/docs/policy.pdf">Пользовательское соглашение</a>
+            </div>
         </section>
     </div>
 </div>
