@@ -2203,6 +2203,14 @@ h2 {
     gap: 16px;
 }
 
+.tourism {
+    max-width: 89px;
+    max-height: 57px;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
 .policy-mobile {
     display: none;
 }

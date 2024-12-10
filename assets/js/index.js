@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const textElements = document.querySelectorAll('.description span');
     const texts = ['ТАРИФОВ', 'ГРАФИКА АРЕНДЫ', 'РАСХОДОВ', 'АНАЛИТИКИ'];
@@ -36,6 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     typeText();
+
+
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("close-popup");
+
+    if (!sessionStorage.getItem("cookiePopupShown")) {
+        popup.style.display = "block";
+
+        sessionStorage.setItem("cookiePopupShown", "true");
+    }
+
+    closePopup.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+
 })
 
 function openModal() {
@@ -43,7 +56,7 @@ function openModal() {
     form.classList.toggle('open')
 }
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const scrollY = window.scrollY;
     const windowWidth = window.innerWidth;
 
