@@ -26,7 +26,11 @@
                     const popup = document.getElementById("popup");
                     const closePopup = document.getElementById("close-popup");
 
-                    popup.style.display = "block";
+                    if (!sessionStorage.getItem("cookiePopupShown")) {
+                        popup.style.display = "block";
+
+                        sessionStorage.setItem("cookiePopupShown", "true");
+                    }
 
                     closePopup.addEventListener("click", function() {
                         popup.style.display = "none";
@@ -146,7 +150,36 @@
 <!--                    Заказать демо-->
 <!--                </button>-->
 
-                <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1458182",hash:"51f86938609b39a94d4dea6d248f3832",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_1458182" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1733740640"></script>
+
+
+
+
+
+
+
+
+
+
+                <script>!function (a, m, o, c, r, m) {
+                    a[o + c] = a[o + c] || {
+                        setMeta: function (p) {
+                            this.params = (this.params || []).concat([p])
+                        }
+                    }, a[o + r] = a[o + r] || function (f) {
+                        a[o + r].f = (a[o + r].f || []).concat([f])
+                    }, a[o + r]({
+                        id: "1458182",
+                        hash: "51f86938609b39a94d4dea6d248f3832",
+                        locale: "ru",
+                        element: 'amo-button-1'
+                    }), a[o + m] = a[o + m] || function (f, k) {
+                        a[o + m].f = (a[o + m].f || []).concat([[f, k]])
+                    }
+                }(window, 0, "amo_forms_", "params", "load", "loaded");</script>
+                <script id="amoforms_script_1458182" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1733740640"></script>
+
+                <div id="amo-button-1"></div>
+
 
             </div>
             <div class="form-request">
@@ -276,6 +309,7 @@
                     <button class="content-button" type="button" onclick="openModal()">
                         Заказать демо
                     </button>
+                    <div id="amo-button-2"></div>
 
                 </div>
             </div>
@@ -462,8 +496,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 <script src="assets/js/index.js"></script>
-
 <script>
+
+
     $(document).ready(function () {
         $('.slick-slider').slick({
             infinite: true,
