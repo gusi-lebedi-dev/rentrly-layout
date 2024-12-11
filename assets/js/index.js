@@ -8,13 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById("popup");
     const closePopup = document.getElementById("close-popup");
 
-    if (!localStorage.getItem("cookiePopupClosed")) {
+
+    if (!sessionStorage.getItem("cookiePopupClosed")) {
         popup.style.display = "block";
     }
 
     closePopup.addEventListener("click", function () {
         popup.style.display = "none";
-        localStorage.setItem("cookiePopupClosed", "true");
+        sessionStorage.setItem("cookiePopupClosed", "true");
     });
 
 
