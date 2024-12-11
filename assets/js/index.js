@@ -5,6 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLetterIndex = 0;
     let isDeleting = false;
 
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("close-popup");
+
+    if (!localStorage.getItem("cookiePopupClosed")) {
+        popup.style.display = "block";
+    }
+
+    closePopup.addEventListener("click", function () {
+        popup.style.display = "none";
+        localStorage.setItem("cookiePopupClosed", "true");
+    });
+
+
     function typeText() {
         const text = texts[currentTextIndex];
         const textElement = textElements[0];
@@ -34,19 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     typeText();
-
-
-    const popup = document.getElementById("popup");
-    const closePopup = document.getElementById("close-popup");
-
-    if (!localStorage.getItem("cookiePopupClosed")) {
-        popup.style.display = "block";
-    }
-
-    closePopup.addEventListener("click", function () {
-        popup.style.display = "none";
-        localStorage.setItem("cookiePopupClosed", "true");
-    });
 
 })
 
