@@ -2317,3 +2317,14 @@ h2 {
     margin: 0 auto !important;
     display: block !important;
 }
+
+
+@media screen and (max-width: 1076px){
+    .popup-content {
+        height: auto;
+    }
+
+    .popup-content button {
+        display: block !important;
+    }
+}
