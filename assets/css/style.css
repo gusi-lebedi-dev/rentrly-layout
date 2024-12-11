@@ -2246,6 +2246,7 @@ h2 {
 .popup-content a {
     color: black;
 }
+
 .popup-content button {
     max-width: 400px;
     width: 100%;
@@ -2289,8 +2290,10 @@ h2 {
     }
 }
 
+
+
 #amoforms_action_btn {
-    font-family: "Montserrat" , sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
     padding: 16px 20px;
     max-width: 256px;
     width: 100%;
@@ -2304,7 +2307,13 @@ h2 {
     color: #FFFFFF !important;
     transition: background .3s;
     cursor: pointer;
+    margin: 0 !important;
 }
+
 #amoforms_action_btn:hover {
     background: #003291 !important;
+}
+.partners #amoforms_action_btn {
+    margin: 0 auto !important;
+    display: block !important;
 }
