@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Mail</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", Arial, sans-serif;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .mail-content {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            background: black;
+            padding: 28px;
+            color: white;
+        }
+
+        .mail-content-item {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+        .mail-content-item:last-child {
+            align-items: flex-end;
+        }
+
+        .logo {
+            margin-top: 7px;
+            width: 155px;
+            height: 49px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .position {
+            position: relative;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 140%;
+            margin-bottom: 13px;
+        }
+
+        .white-line {
+            display: block;
+            background: white;
+            width: 100%;
+            height: 2px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        ul li {
+            color: white;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul:first-child {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        ul:first-child img {
+            width: 20px;
+            height: 20px;
+        }
+
+        ul:last-child {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 0;
+            padding-left: 30px;
+        }
+
+        ul:last-child li a {
+            display: flex;
+            gap: 4px;
+        }
+
+        @media screen and (max-width: 420px) {
+            .mail-content-item {
+                flex-direction: column;
+                gap: 27px;
+            }
+            .mail-content-item:last-child {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+                gap: 20px;
+            }
+            ul:first-child {
+                justify-content: center;
+                width: 100%;
+            }
+            ul:last-child,
+            ul {
+                padding: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="mail-content">
+    <div class="mail-content-item">
+        <img class="logo" src="assets/img/mail-eu/logo.png" alt="logo">
+        <div style="width: 100%">
+            <p class="title">
+                Matias La Paz
+            </p>
+            <p class="position">
+                CEO
+            </p>
+            <span class="white-line"></span>
+        </div>
+    </div>
+    <div class="mail-content-item">
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/share/19pEz9HpEW/?mibextid=wwXIfr">
+                    <img src="assets/img/mail-eu/facebook.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a target="_blank"
+                   href="https://www.instagram.com/streetrentacar/profilecard/?igsh=MTVuZGdqcW0yczg0Nw==">
+                    <img src="assets/img/mail-eu/instagram.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/company/streetrentacar.com/">
+                    <img src="assets/img/mail-eu/linkedin.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="tel:+54 (9) 11 3141 2805">
+                    <img src="assets/img/mail-eu/phone.png" alt="">
+                    <span>+54 (9) 11 3141 2805</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="mailto:eservas@streetrentacar.com">
+                    <img src="assets/img/mail-eu/mail.png" alt="">
+                    <span>eservas@streetrentacar.com</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://streetrentacar.com">
+                <img src="assets/img/mail-eu/web.png" alt="">
+                <span>streetrentacar.com</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
