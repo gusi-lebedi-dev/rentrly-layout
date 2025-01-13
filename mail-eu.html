@@ -32,6 +32,7 @@
             align-items: center;
             gap: 45px;
         }
+
         .mail-content-item:last-child {
             align-items: flex-end;
         }
@@ -86,7 +87,8 @@
             gap: 12px;
         }
 
-        ul:first-child img {
+
+        ul img {
             width: 20px;
             height: 20px;
         }
@@ -102,6 +104,7 @@
         ul:last-child li a {
             display: flex;
             gap: 4px;
+            align-items: center;
         }
 
         @media screen and (max-width: 420px) {
@@ -109,15 +112,18 @@
                 flex-direction: column;
                 gap: 27px;
             }
+
             .mail-content-item:last-child {
                 align-items: flex-start;
                 flex-direction: column-reverse;
                 gap: 20px;
             }
+
             ul:first-child {
                 justify-content: center;
                 width: 100%;
             }
+
             ul:last-child,
             ul {
                 padding: 0;
@@ -129,7 +135,7 @@
 <body>
 <div class="mail-content">
     <div class="mail-content-item">
-        <img class="logo" src="assets/img/mail-eu/logo.png" alt="logo">
+        <a target="_blank" href="http://streetrentacar.com"><img class="logo" src="assets/img/mail-eu/logo.png" alt="logo"></a>
         <div style="width: 100%">
             <p class="title">
                 Matias La Paz
@@ -175,8 +181,8 @@
             </li>
             <li>
                 <a target="_blank" href="http://streetrentacar.com">
-                <img src="assets/img/mail-eu/web.png" alt="">
-                <span>streetrentacar.com</span>
+                    <img src="assets/img/mail-eu/web.png" alt="">
+                    <span>streetrentacar.com</span>
                 </a>
             </li>
         </ul>
