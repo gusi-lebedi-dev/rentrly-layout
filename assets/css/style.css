@@ -1921,6 +1921,7 @@ h2 {
     object-fit: cover;
     margin-bottom: 12px;
     max-height: 110px;
+    object-position: top;
 }
 
 .blog-item .description {
@@ -2034,6 +2035,20 @@ h2 {
     font-style: italic;
 }
 
+.blog-post-item {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.blog-post-item div {
+    flex-basis: calc(50% - 16px);
+}
+
+.blog-post-item div img {
+    border-radius: 32px;
+}
+
 @media screen and (max-width: 1076px) {
     .bread-crumbs {
         margin-bottom: 12px;
@@ -2058,6 +2073,18 @@ h2 {
     .blog-post-content .description,
     .blog-post-content .hint {
         color: rgba(0, 21, 61, 1);
+    }
+
+    .blog-post-item div {
+        flex-basis: 100%;
+    }
+
+    .blog-post-item div img {
+        width: 100%;
+    }
+
+    .blog-post-item {
+        gap: 0;
     }
 }
 
