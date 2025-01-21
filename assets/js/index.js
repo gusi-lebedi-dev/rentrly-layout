@@ -51,8 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-function openModal() {
-    const form = document.querySelector('.form-request');
+function openModalDemo() {
+    const form = document.querySelector('.form-demo-version');
+    form.classList.toggle('open')
+}
+
+function openModalPartners() {
+    const form = document.querySelector('.form-partners');
     form.classList.toggle('open')
 }
 
